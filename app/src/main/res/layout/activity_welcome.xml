@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".WelcomeActivity">
+
+    <!-- Soft decorative top background -->
+    <View
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="-60dp"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/bg_circle_top" />
+
+    <!-- Soft decorative bottom background -->
+    <View
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="-70dp"
+        android:layout_marginBottom="-50dp"
+        android:background="@drawable/bg_circle_bottom" />
+
+    <!-- Main content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingStart="28dp"
+            android:paddingTop="40dp"
+            android:paddingEnd="28dp"
+            android:paddingBottom="28dp">
+
+            <TextView
+                android:id="@+id/tvCampus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Universitas Teknologi Bandung"
+                android:textColor="#6E7C87"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.03" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="30dp"
+                app:cardBackgroundColor="#F9FCFF"
+                app:cardCornerRadius="110dp"
+                app:cardElevation="8dp"
+                app:strokeColor="#E7EEF5"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="24dp">
+
+                    <ImageView
+                        android:id="@+id/imgLogo"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:src="@drawable/logo_utb"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="UTB Logo" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:gravity="center"
+                android:text="Seminar Registration App"
+                android:textColor="#23313B"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:text="Discover inspiring seminars and start your learning journey with UTB."
+                android:textColor="#6D7984"
+                android:textSize="15sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                app:cardBackgroundColor="#DDF3E8"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="10dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGetStarted"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:backgroundTint="#DDF3E8"
+                    android:text="Get Started"
+                    android:textAllCaps="false"
+                    android:textColor="#244233"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="32dp" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account? "
+                    android:textColor="#66747F"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvLoginLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log in"
+                    android:textColor="#7DA8D8"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
