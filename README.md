@@ -29,4 +29,5 @@ Kampus: Universitas Teknologi Bandung
 Kelas: TIF RP 24A CID
 
 ## 🎥 Video Penjelasan
-Link: (isi nanti)
+Link: https://youtu.be/HB-3jKN-MkE?si=U9GIsU3Nxg2Fd__0
+
