@@ -30,4 +30,5 @@ Kelas: TIF RP 24A CID
 
 ## 🎥 Video Penjelasan
 Link: https://youtu.be/HB-3jKN-MkE?si=U9GIsU3Nxg2Fd__0
+Running: https://youtube.com/shorts/PAVEyPKkZZg?feature=share
 
